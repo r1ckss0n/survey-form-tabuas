@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">
+        Faça o seu pedido!
+    </h1>
+    <p id="description">
+        Peça o sua cervaja na Cervejaria Tábuas.
+    </p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Seu nome</label>
+        <input type="text" name="name" id="name" required placeholder="Insira seu nome"> <!-- requeired é para que o campo não fique vazio-->
+        
+        <label for="email" id="email-label">Seu e-mail</label>
+        <input type="email" name="email" id="email" required placeholder="Insira su email">
+
+        <label for="number" id="number-label">Seu número</label>
+        <input type="number" name="number" id="number" min="1" max="5" placeholder="Insira seu número">
+
+      
+        <select name="dropdown" id="dropdown">
+            <option value="0">Estaca</option>
+            <option value="1">Ripa</option>
+            <option value="2">Lenha</option>
+            
+
+        </select>
+
+        <input type="radio" name="entrega" id="retirada" value="0"> <label for="retirada">Retirada</label> <!--nesse name tem que colocar igual se não ele marca as duas caixa na page-->
+        <input type="radio" name="entrega" id="entrega" value="1"> <label for="entrega">Entrega</label>
+        
+        <input type="checkbox" name="estaca" id="estaca" value="0"> <label for="estaca">Estaca</label>
+        <input type="checkbox" name="ripa" id="ripa" value="1"> <label for="ripa">Ripa</label>
+        <input type="checkbox" name="Lenha" id="Lenha" value="1"> <label for="Lenha">Lenha</label>
+        
+
+        <textarea name="Observaacoes" id="observacoes" cols="70" rows="2"></textarea>
+
+        <button id="submit">Enviar</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</body>
+</html>
